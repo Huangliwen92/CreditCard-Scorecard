@@ -17,14 +17,18 @@ o	SVM also has a high sensitivity (mean of 0.8131), whereas KNN has a lower sens
 •	Specificity (Spec):
 o	SVM shows the highest median specificity (0.9426), indicating it performs best at correctly identifying the negative class.
 o	RF follows closely behind, while KNN has the lowest specificity (mean of 0.5521).
+
 Based on these results:
 •	Support Vector Machine (SVM) appears to be the best model overall because it has the highest ROC (both median and maximum) and also performs well on both sensitivity and specificity. This indicates that SVM is the most balanced model in terms of both correctly identifying positive cases (high sensitivity) and correctly identifying negative cases (high specificity).
 •	Random Forest (RF) also performs very well, especially in terms of sensitivity. If your priority is to minimize false negatives (i.e., not missing positive cases), RF might be preferable. However, since SVM slightly edges out in ROC and specificity, SVM is still considered superior in this context.
 •	KNN (k-Nearest Neighbors), while a useful model, has lower performance metrics compared to SVM and RF, particularly in ROC and specificity, suggesting it's less effective at distinguishing between classes in this dataset.
+
 Conclusion:
 •	SVM is the best model based on ROC, sensitivity, and specificity, making it the most reliable choice for classification in this context.
 •	Random Forest is a close second, particularly strong in sensitivity.
 •	KNN lags behind the other models and may not be the optimal choice for this dataset.
+
+
 These conclusions are drawn from the combination of metrics, but the best model might also depend on the specific context and what you value more: minimizing false positives, false negatives, or maximizing overall accuracy.
 
 
