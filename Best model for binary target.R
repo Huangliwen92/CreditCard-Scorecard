@@ -5,7 +5,7 @@ library(caret)
 library(e1071)
 library(randomForest)
 
-data <- read.delim("~/HLW/GT OMSA/ISYE 6501/Week1/2.2credit_card_data-headersSummer2018.txt")
+data <- read.delim("~/credit_card_data-headersSummer2018.txt")
 
 matrixdata <- as.matrix(data)
 X <- as.matrix(data[, 1:10])  # Assuming columns 1 to 10 are V1 to V10
@@ -69,4 +69,5 @@ summary(models_results)
 
 # Visualize the results
 dotplot(models_results)
+
 
